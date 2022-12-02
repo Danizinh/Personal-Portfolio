@@ -1,153 +1,165 @@
-*{
-  padding: 0px;
+* {
   margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   font-family: 'Dosis', sans-serif;
 }
 
-section{
-  position: relative;
-  min-height: 100vh;
-  min-width: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header{
-  position:absolute;
-  top:0px;
-  left: 0px;
-  width: 100%;
-  padding: 20px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-ul {
-  position: relative;
-  display: flex;
-}
-
-ul li {
-  list-style: none;
-}
-
-ul li a {
-  display: inline-block;
-  color: #000;
-  font-weight: 900;
-  margin-left: 40px;
+a {
+  color: black;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-weight: 100;
 }
 
-ul li a:hover{
-  color:#CCC;
-}
-button {
-  border: 2px solid #ccc;
-  color: #000;
-  padding: 13px 15px;
-  font-size: 16px;
-  cursor: pointer;
-  text-transform: uppercase;
-  border-radius: 0px !important;
-}
-#btnLeiaMais{
-  border: solid #ccc;
-  width: 6vw;
-  background-color: #fff;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: 900;
-  letter-spacing: 1px;
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.D_logo{
-  padding: 5px;
-  height: 80px;
-  max-width: 55px;
-  max-height: 50px;
-  cursor: pointer;
-  filter: drop-shadow(2px 4px 8px #0a0a0b);
-}
-
-.main{
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2rem;
-}
-
-.h-1{
-  font-size: 6rem;
-  font-weight: 100;
-  color: #000;
-  text-transform: uppercase;
-  margin-left: 9%;
-  letter-spacing: 12vh;
-}
-
-.paragraph{
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
   display: flex;
-  justify-content: center;
-  font-size: 3rem;
-  color: #ccc;
-  text-transform: uppercase;
-  letter-spacing: 14px;
-  margin-bottom: 28px;
-}
-.content{
-  position: relative;
-  width: 100%;
-  display:flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  background-image: url("../img/pexels-rachel-claire-5531009.jpg");
+  background-position: center;
+  background-size: cover;
+  background: transparent;
 }
 
-.content .text-main{
-  position: relative;
-  max-width: 600px;
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
 }
 
-.content .text-main h2{
-  color:#000;
-  font-size: 2em;
-  line-height: 1.4em;
-  margin-left: 40px;
+#menu a {
+  display: block;
+  padding: 0.5rem;
 }
 
-.content .text-main p{
-  color:#000;
-  text-transform: uppercase;
-  font-weight: 100;
-  width: 68vh;
-} 
-
-#mais{
+#btn-mobile {
   display: none;
 }
 
-::-webkit-scrollbar {
-  width: 13px;
-  height: 13px;
+.container {
+  background-image: url("../img/pexels-photo-4088255.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+
 }
 
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(40deg, #B3B1B3 14%, #FFFFFF 64%);
-  border-radius: 10px;
+.titles {
+  display: flex;
+  justify-content: center;
+  margin-top: 30vh;
+  font-size: 14vh;
+  text-transform: uppercase;
+  letter-spacing: 36px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(40deg, #8C8A8C 14%, #FFFFFF 64%);
+.h-2 {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #ccc;
+  margin-bottom: 13px;
+  letter-spacing: 55px;
 }
 
-::-webkit-scrollbar-track {
-  background: #FFFFFF;
-  border-radius: 10px;
-  box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+button {
+  border: 2px solid #ccc;
+  background-color: #fff;
+  color: #000;
+  padding: 13px 15px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 31px 7px;
+}
+
+.btn {
+  margin: 0;
+  position: absolute;
+  top: 73%;
+  left: 47%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate
+}
+
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #e7e7e7;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
 }

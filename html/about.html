@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,34 +11,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="icon" href="../icons/Cartoon-Lâmpada-PNG.png">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/about.css">
-    <title>About</title>
+    <link rel="stylesheet" href="../mobile/responsive.css">
+    <title>Home</title>
 </head>
-<div class="general">
-    <section>
-        <header class="header">
-            <a href="#Home"><img src="../log/Cartoon-Lâmpada-PNG.png" class="D_logo"></a>
-            <nav class="nav-bar">
-                <ul>
-                    <li><a href="index.html ">Home</a> </li>
-                    <li><a href="about.html">About</a> </li>
-                    <li><a href="portfolio.html">Portfólio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <a id="logo" href="../icons/Cartoon-Lâmpada-PNG.png"></a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a href="../html/index.html">Home</a></li>
+                    <li><a href="../html/about.html">About</a></li>
+                    <li><a href="../html/about.html">Summary</a></li>
+                    <li><a href="../html/portfolio.html">Portfólio</a></li>
+                    <li><a href="../html/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <div class="main">
-            <h1 class="h-1">About Me</h1>
-            <div class="content">
-                <div class="text-main">
-                    <p>HI PEOPLE WELCOME TO MY PERSONAL PORTFOLIO, STAY HERE SO I CAN SHOW SOME OF MY WORK, I HAVE BEEN A DEVELOPER FOR THREE YEARS AND >MY OBJECTIVE HAS ALWAYS BEEN TO HAVE THE CAPACITY TO HELP PEOPLE AND GROW AS A PROFESSIONAL</p>
-                    <a href="../doc/Currículo.pdf" download="curriculo.pdf"> <button> Download CV</button></a>  
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-<script type="text/javascript" src="../js/script.js"></script>
+        <h2 class="h-2">About me</h2>
+        <p class="paragraph_1">Olá Pessoal, Bem Vindos ao meu Portfólio, Pessoal  
+            estou aqui para apresentar um pouco sobre mim e aproveitar e mostrar alguns dos meus trabalhos.
+            <br>Sou desenvolvedora a quase 4 anos, Agora estou cursando  (Analise Desenvolvimento  De Sistemas), Minha
+            pós-graduação
+            está indefinida até o momento <br> é difícil escolher  dentro da área existe várias verteres, entrando nesta área
+            o meu objetivo sempre foi ter as cartas nas mãos, objetivos  traçado e <br> obter a   capacidade de ajudar as
+            pessoas, hoje a área de TI, está em todos os lugares, necessitamos dos  <br>profissionais em algum instante, 
+            isso de certa forma nos faz codependente das tecnologias atualmente 
+
+            <br>
+        </p>
+    </div>
+    <script src="../js/script.js"></script>
 </body>
+<a href="../doc/Currículo.pdf" download="curriculo.pdf"> <button class="btn"> Download CV</button></a>
 
 </html>
