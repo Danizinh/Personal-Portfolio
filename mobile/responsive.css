@@ -4,6 +4,7 @@
     font-size: 3vh;
     text-transform: uppercase;
     letter-spacing: 36px;
+    font-weight: bolder;
   }
   .container{
     height: 100vh;
@@ -15,6 +16,7 @@
     letter-spacing: 23px;
     color: #000;
     margin-left: 31px;
+    font-weight: bolder;
   }
   .h-1{
     font-size: 2rem;
