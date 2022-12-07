@@ -9,7 +9,6 @@ a {
   color: black;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 4px;
 }
 
 
@@ -25,20 +24,17 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url("../img/pexels-rachel-claire-5531009.jpg");
-  background-position: center;
-  background-size: cover;
-  background: transparent;
 }
 
 #menu {
   display: flex;
   list-style: none;
-  gap: 0.5rem;
+  gap: 3.5rem;
 }
 
 #menu a {
   display: block;
+  color: #ccc;
   padding: 0.5rem;
 }
 
@@ -47,7 +43,7 @@ a {
 }
 
 .container {
-  background-image: url("../img/pexels-photo-4088255.webp");
+  background-image: url("../img/pexels-karolina-grabowska-4195329.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -57,22 +53,36 @@ a {
 
 .titles {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 30vh;
-  font-size: 14vh;
-  text-transform: uppercase;
-  letter-spacing: 36px;
+  align-items: center;
 }
 
-.h-2 {
+.paragraph {
   display: flex;
-  font-size: 2rem;
   justify-content: center;
-  font-weight: 100;
+  font-size: 2vh;
+  color: #fff;
+  width: 70%;
+}
+
+.h-4 {
+  display: flex;
+  font-size: 2vh !important; 
+  justify-content: center;
   text-transform: uppercase;
-  color: #ccc;
-  margin-bottom: 13px;
-  letter-spacing: 55px;
+  letter-spacing: 34px;
+  color: #ccc !important;
+
+}
+
+.h-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11em;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 button {
@@ -86,15 +96,6 @@ button {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 31px 7px;
-}
-
-.btn {
-  margin: 0;
-  position: absolute;
-  top: 73%;
-  left: 47%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate
 }
 
 @media (max-width: 600px) {
@@ -161,5 +162,73 @@ button {
   #nav.active #hamburger::after {
     transform: rotate(-135deg);
     top: -7px;
+  }
+}
+
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .static-txt {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 11px;
+}
+
+.hero .dynamic-txts {
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.hero .dynamic-txts li {
+  list-style: none;
+  color: #000;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+.dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border-left: 2px solid #000;
+  animation: typing 3s steps(8) infinite;
+}
+
+@keyframes typing {
+
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+
+  100% {
+    left: 0;
   }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,29 +9,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="icon" href="../icons/Cartoon-Lâmpada-PNG.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../mobile/responsive.css">
-    <title>Contact </title>
+    <title>Home</title>
 </head>
-<div class="general" id="Home">
-    <section>
-        <header class="header">
-            <a href="#Home"><img src="../log/Cartoon-Lâmpada-PNG.png" class="D_logo"></a>
-            <nav class="nav-bar">
-                <ul>
-                    <li><a href="../html/index.html">Home</a> </li>
-                    <li><a href="../html/about.html">About</a> </li>
-                    <li><a href="../html/about.html">Summary</a></li>
+<body>
+    <div class="container">
+        <header id="header">
+            <a id="logo" href="../icons/Cartoon-Lâmpada-PNG.png"></a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a href="../html/index.html">Home</a></li>
+                    <li><a href="../html/about.html">About</a></li>
+                    <li><a href="../html/about.html">Skills</a></li>
+                    <li><a href="../html/about.html">Resume</a></li>
                     <li><a href="../html/portfolio.html">Portfólio</a></li>
                     <li><a href="../html/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <div class="main">
-            <p class="paragraph">Send your questions</p>
-            <h1 class="h-1 animate__animated" id="heartBeat">Contact me</h1>
-            <div class="container">
+            <h2 class="h-2">Send your questions</h2>
+            <div class="full">
                 <form method="POST" action="../php/index.php" autocomplete="off">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" required>
@@ -45,15 +52,14 @@
                     <textarea name="message" id="message" required></textarea>
 
                     <br>
+                    <div class="text">
 
-                    <button>Send</button>
+                        <button>Send</button>
+                    </div>
                 </form>
 
             </div>
         </div>
-    </section>
-</div>
-<script type="text/javascript" src="../js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
-
 </html>
