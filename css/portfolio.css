@@ -4,36 +4,146 @@
     box-sizing: border-box;
     font-family: 'Dosis', sans-serif;
 }
-
-.main {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2rem;
-}
+.container {
+    background-image: url("../img/pexels-karolina-grabowska-4195329.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 136vh !important;
+  
+  }
 
 .h-1 {
-    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    font-size: 4em!important;
     font-weight: 100;
     text-transform: uppercase;
-    letter-spacing: 100px;
+    letter-spacing: 16px;
+    color: #fff !important;
+}
+.paragraph{
+    display: flex;
+    justify-content: center;
+    font-size: 5vh !important;
+    color: #fff !important;
+    width: 100% !important;
+    text-transform: uppercase;
+}
+.container {
+    width: 100%;
+    height: 100%;
 }
 
-::-webkit-scrollbar {
-    width: 13px;
-    height: 13px;
+.trans {
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
 }
 
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(40deg, #B3B1B3 14%, #FFFFFF 64%);
-    border-radius: 10px;
+.top {
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(40deg, #8C8A8C 14%, #FFFFFF 64%);
+.top ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    box-sizing: border-box;
 }
 
-::-webkit-scrollbar-track {
-    background: #FFFFFF;
-    border-radius: 10px;
-    box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+.top ul li {
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 25%;
+    overflow: hidden;
+}
+
+.top ul li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    content: '';
+    color: white;
+    opacity: 0.4;
+    text-align: center;
+    box-sizing: border-box;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+.top ul li:hover::before {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.90);
+}
+
+.top ul li img {
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+}
+
+.lightbox {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    position: relative;
+    top: -100%;
+    /* Transition */
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+.lightbox:target {
+    outline: none;
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 1.2s ease;
+    -moz-transition: all 1.2s ease;
+    -ms-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+    -webkit-transition: all 1.2s ease;
+}
+
+.lightbox:target img {
+    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
