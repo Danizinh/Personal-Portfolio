@@ -38,8 +38,7 @@
     box-shadow: 5px 5px 15px #000;
     font-weight: 100;
     text-transform: uppercase;
-    border-radius: 10px;
-}
+  }
 
 .main {
     display: flex;
@@ -76,4 +75,11 @@
     background: #FFFFFF;
     border-radius: 10px;
     box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+}
+
+.qual{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-weight: bolder;
 }
