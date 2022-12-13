@@ -4,36 +4,19 @@
     box-sizing: border-box;
     font-family: 'Dosis', sans-serif;
 }
-.container {
-    background-image: url("../img/pexels-karolina-grabowska-4195329.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 136vh !important;
-  
-  }
 
-.h-1 {
+
+.h-5 {
     display: flex;
     justify-content: center;
     font-size: 4em!important;
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 16px;
-    color: #fff !important;
+    color: #000 !important;
 }
-.paragraph{
-    display: flex;
-    justify-content: center;
-    font-size: 5vh !important;
-    color: #fff !important;
-    width: 100% !important;
-    text-transform: uppercase;
-}
-.container {
-    width: 100%;
-    height: 100%;
-}
+
+
 
 .trans {
     transition: all 1s ease;
