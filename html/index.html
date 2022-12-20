@@ -1,185 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="icon" href="../icons/Cartoon-Lâmpada-PNG.png">
-    <title>Home</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/about.css">
-    <link rel="stylesheet" href="../css/portfolio.css">
-    <link rel="stylesheet" href="../mobile/responsive.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dark Mode</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=M+PLUS+Rounded+1c:wght@300&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/about.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/scripts.js" defer></script>
 </head>
-
 <body>
-    <div class="container">
-        <header id="header">
-            <a id="logo" href="../icons/Cartoon-Lâmpada-PNG.png"></a>
-            <nav id="nav">
-                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
-                    aria-expanded="false">
-                    <span id="hamburger"></span>
-                </button>
-                <ul id="menu" role="menu">
-                    <li><a href="../html/index.html">Home</a></li>
-                    <li><a href="../html/about.html">About</a></li>
-                    <li><a href="../html/resume.html">Resume</a></li>
-                    <li><a href="../html/portfolio.html">Portfólio</a></li>
-                    <li><a href="../html/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <h4 class="h-4">Hi, my name is</h4>
-
-        <h1 class="h-1">Daniela Malta.</h1>
-        <p class="subtitile">I build things .</p>
-        <div class="text">
-            <p class="paragraph">
-                I'm a software developer currently I'm developing some projects so that my professional development
-                grows more and more,
-                specialized in building applications, systems, databases, E-commerce among other things
-
-            </p>
-            <button class="btn"><a href="../html/about.html">About me</a></button>
+  <header>
+    <div>
+      <input type="checkbox" name="change-theme" id="change-theme" />
+      <label for="change-theme">
+        <img src="../icons/sun (2).svg" class="sun">
+        <img src="../icons/moon (3).svg" class="moon">
+      </label>
+    </div>
+  </header>
+  <div class="container">
+    <div class="div">
+      <img src="../img/WhatsApp Image 2022-12-18 at 23.30.06.jpeg" class="picture">
+      <h1 class="h-1">Daniela<br> Malta</h1>
+    </div>
+    <div class="text">
+      <p class="subtitile">I build things .</p>
+      <p class="paragraph">
+        I'm a software developer currently I'm developing some projects so that my professional development
+        grows more and more,
+        specialized in building applications, systems, databases, E-commerce among other things
+      </p>
+      <!-- <button class="btn"><a href="#about">About me</a></button>  -->
+    </div>
+    <div class="phrases">
+      <p>A formula for success? It's pretty simple, really: double your company's likelihood of failure. You think that
+        failure is the enemy of success.<br>But it is not, not at all. You can be discouraged by mistakes or learn from
+        them, so move on and keep failing.<br> Make as many mistakes as you can That's where you'll succeed” – Thomas J.
+        Watson, Entrepreneur</p>
+    </div>
+  </div>
+  <div class="general" id="about">
+    <div class="main">
+      <div class="text">
+        <h2 class="h-2">About me</h2>
+        <div class="content-img">
+          <img src="../img/6ae68c21-dcd2-435b-b8b7-11430580dff3.jpg" alt="">
         </div>
+        <p class="paragraph">
+          Hi and I'm a backend developer and freelancer, I build amazing things for amazing people
+        </p>
+        <!-- <button class="btn"><a href="../doc/Currículo (1).pdf" download="curriculo.pdf">Download CV</a></button> -->
+      </div>
     </div>
-    <div class="general">
-    <h2 class="h-2">About me</h2>
-    <div class="main">   
-        <div class="content">
-            <span>Name<br />
-                <h3 class="h-3">Daniela Malta</h3>
-                <br>
-
-                    <span>Birthday<h3 class="h-3">02.08.2022</h3></span><br />
-
-                    <span>Profession<h3 class="h-3">Back-end developer</h3></span><br />
-                    <span>Email<h3 class="h-3">danimaltoc@outlook.com</h3></span><br />
-                    <span>Freelance<h3 class="h-3">Available</h3></span><br />
-
-                    <span>Website<h3 class="h-3"><a href="https://welcometomypersonalportfolio.netlify.app/html">click
-                                and access</a></h3></span><br />
-
-                    <span>Location<h3 class="h-3">Sao Paulo</h3></span><br />
-                    <span>Interests<h3 class="h-3">MOVIES,SERIES,PROGRAMMATION</h3></span><br />
-
-                    <span>Social<h3 class="h-3">
-                            <a href="https://www.linkedin.com/in/daniela-cruz-malta/"><img
-                                    src="../icons/icons8-linkedin.svg" alt=""></a>
-                            <a href="https://api.whatsapp.com/send?phone=5511991583600"><img
-                                src="../icons/icons8-whatsapp.svg" alt=""></a>
-                                <a href="https://github.com/Danizinh"><img src="../icons/icons8-github.svg" alt=""></a>
-                                <a href="mailto:danimaltoc@outlook.com"><img
-                                    src="../icons/icons8-microsoft-outlook-2019.svg" alt=""></a>
-                                </h3></span><br />
-                            </div>
-                            <div class="cem">100</div>
-                            <div class="client">
-                                Happy Clients
-                            </div>
-                            <div class="cem">100</div>
-                            <div class="client"z
- //,,,//                                Happy Clients
-                            </div>     
-                    <div class="text">
-                        
-                        <div class="content-img">
-                            <img src="../img/WhatsApp Image 2022-12-05 at 18.51.42.jpeg" alt="">
-                            
-                        </div>
-                        <p class="paragraph">
-                            Hello everyone welcome I hope you can get to know me a little better let's go?, I like things that
-                    impress people,
-                    that's why I got interested in programming 4 years ago living this crazy and fun life as a
-                    programmer, studying systems development analysis still looking for a postgraduate degree
-                    I can say it's hard, jokes aside
-                    there is a phrase that i love
-                    which starts like this: ⁠ The best way to predict the future and invent it
-                </p>
-                <button class="btn"><a href="../doc/Currículo.pdf" download="curriculo.pdf">Download CV</a></button>
-            </div>
+  </div>
+  
+  <!-- <div class="uses">
+    <div class="text">
+      <p class="paragraph">this is a list of tools used in my day to day work, always trying to improve my skills with
+        different tools. I will always try to update this list so that it is effective.</p>
+    </div>
+    <img src="../img/WhatsApp Image 2022-12-16 at 13.47.50.jpeg" class="setup">
+    <div class="d">
+      <div class="e">
+        <div class="config">
+          <span class="all">Editor & Terminal ⌨️</span>
         </div>
-    </div>
-    <div class="general_">
-        <h5 class="h-5">Welcome to my Portfólio</h5>
-        <div class="top">
-            <ul>
-                <li><a href="#img_1"><img src="../img/Capturar.PNG"></a></li>
-                <li><a href="#img_2"><img src="../img/site.PNG"></a></li>
-                <li><a href="#img_3"><img
-                            src="https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=46a85a1451e47aea5152ade8299f2894"></a>
-                </li>
-                <li><a href="#img_4"><img src="https://picjumbo.imgix.net/HNCK3991.jpg?q=40&w=1650&sharp=30"></a></li>
-                <li><a href="#img_5"><img
-                            src="https://image.freepik.com/free-photo/sunlight-in-the-forest_1004-9.jpg"></a></li>
-                <li><a href="#img_6"><img
-                            src="https://image.freepik.com/free-photo/road-curve-landscape_426-19324358.jpg"></a></li>
-                <li><a href="#img_7"><img src="https://image.freepik.com/free-photo/shiny-lights_385-19321244.jpg"></a>
-                </li>
-                <li><a href="#img_8"><img
-                            src="https://image.freepik.com/free-photo/skyscraper-with-clouds-reflection_23-10.jpg"></a>
-                </li>
-                <li><a href="#img_9"><img
-                            src="https://image.freepik.com/free-photo/foggy-pine-forest_426-19323742.jpg"></a></li>
-                <li><a href="#img_10"><img
-                            src="https://image.freepik.com/free-photo/working-from-bed_385-19324222.jpg"></a></li>
-                <li><a href="#img_11"><img
-                            src="https://image.freepik.com/free-photo/a-sky-full-of-stars_426-19320899.jpg"></a></li>
-                <li><a href="#img_12"><img
-                            src="https://image.freepik.com/free-photo/city-in-bokeh_426-19322711.jpg"></a></li>
-                <li><a href="#img_13"><img
-                            src="https://image.freepik.com/free-photo/desert-and-the-road_426-19314945.jpg"></a></li>
-                <li><a href="#img_14"><img
-                            src="https://image.freepik.com/free-photo/sunlight-through-the-grass_385-19321333.jpg"></a>
-                </li>
-                <li><a href="#img_15"><img
-                            src="https://image.freepik.com/free-photo/colorful-springtime_385-19321241.jpg"></a></li>
-                <li><a href="#img_16"><img
-                            src="https://image.freepik.com/free-photo/from-blue-to-brown_426-19320820.jpg"></a></li>
-            </ul>
-            <a href="#_1" class="lightbox trans" id="img_1"><img src="../img/Capturar.PNG"></a>
-            <a href="#_2" class="lightbox trans" id="img_2"><img src="../img/site.PNG"></a>
-            <a href="#_3" class="lightbox trans" id="img_3"><img
-                    src="https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=46a85a1451e47aea5152ade8299f2894"></a>
-            <a href="#_4" class="lightbox trans" id="img_4"><img
-                    src="https://picjumbo.imgix.net/HNCK3991.jpg?q=40&w=1650&sharp=30"></a>
-            <a href="#_5" class="lightbox trans" id="img_5"><img
-                    src="https://image.freepik.com/free-photo/sunlight-in-the-forest_1004-9.jpg"></a>
-            <a href="#_6" class="lightbox trans" id="img_6"><img
-                    src="https://image.freepik.com/free-photo/road-curve-landscape_426-19324358.jpg"></a>
-            <a href="#_7" class="lightbox trans" id="img_7"><img
-                    src="https://image.freepik.com/free-photo/shiny-lights_385-19321244.jpg"></a>
-            <a href="#_8" class="lightbox trans" id="img_8"><img
-                    src="https://image.freepik.com/free-photo/skyscraper-with-clouds-reflection_23-10.jpg"></a>
-            <a href="#_9" class="lightbox trans" id="img_9"><img
-                    src="https://image.freepik.com/free-photo/foggy-pine-forest_426-19323742.jpg"></a>
-            <a href="#_10" class="lightbox trans" id="img_10"><img
-                    src="https://image.freepik.com/free-photo/working-from-bed_385-19324222.jpg"></a>
-            <a href="#_11" class="lightbox trans" id="img_11"><img
-                    src="https://image.freepik.com/free-photo/a-sky-full-of-stars_426-19320899.jpg"></a>
-            <a href="#_12" class="lightbox trans" id="img_12"><img
-                    src="https://image.freepik.com/free-photo/city-in-bokeh_426-19322711.jpg"></a>
-            <a href="#_13" class="lightbox trans" id="img_13"><img
-                    src="https://image.freepik.com/free-photo/desert-and-the-road_426-19314945.jpg"></a>
-            <a href="#_14" class="lightbox trans" id="img_14"><img
-                    src="https://image.freepik.com/free-photo/sunlight-through-the-grass_385-19321333.jpg"></a>
-            <a href="#_15" class="lightbox trans" id="img_15"><img
-                    src="https://image.freepik.com/free-photo/colorful-springtime_385-19321241.jpg"></a>
-            <a href="#_16" class="lightbox trans" id="img_16"><img
-                    src="https://image.freepik.com/free-photo/from-blue-to-brown_426-19320820.jpg"></a>
+        <ul class="ulyu" style="list-style-type:square;">
+          <li>Editor - VSCode</li><br>
+          <li>XAMPP</li><br>
+          <li>Color Theme - Monokai Vibrant</li><br>
+        </ul>
+        <div class="config">
+          <span class="all">Desktop Apps 🖥️</span>
         </div>
+        <ul class="ulyu" style="list-style-type:square">
+          <li>Discord - engaging is fun!</li>
+          <li>Tidal- music app</li>
+          <li>Alfred - automate my workflow</li>
+        </ul>
+        <div class="config">
+          <span class="all">Desk Setup 👩‍💻💻</span>
+        </div>
+        <ul class="ulyu" style="list-style-type:square">
+          <li>RTX 3060 Ti</li>
+          <li>Ryzen 5600x</li>
+          <li>16gb RAM</li>
+          <li>2TB M.2</li>
+          <li>Samsung 32" UHD monitor, 4K</li>
+          <li>Custom keyboard, gateron yellow</li>
+          <li>Logitech MX3s Master</li>
+          <li>Fifine K688 Dynamic Microphone</li>
+        </ul>
+      </div>
     </div>
-    </div>
-    <script src="../js/script.js"></script>
-    <script src="../js/scroll.js"></script>
+  </div> -->
+  <script src="../js/script.js"></script>
+  <script src="../js/scroll.js"></script>
+  <script src="../js/dark.js"></script>
 </body>
 
 </html>

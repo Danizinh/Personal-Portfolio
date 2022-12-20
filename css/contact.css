@@ -5,18 +5,6 @@
     font-family: 'Dosis', sans-serif;
 }
 
-
-button {
-    border: 2px solid #ccc;
-    background-color: #fff;
-    padding: 13px 30px;
-    font-size: 16px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-
 .full {
     display: flex;
     backdrop-filter: blur(10px);
@@ -30,13 +18,6 @@ button {
     border-radius: 10px;
 }
 
-.h-1,.h-2{
-    font-size: 14vh;
-    font-weight: 100;
-    text-transform: uppercase;
-    letter-spacing: 33px;
-    color: #000;
-}
 
 
 input {
