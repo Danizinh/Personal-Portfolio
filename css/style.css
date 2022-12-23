@@ -58,6 +58,12 @@ a {
   justify-content: center;
   align-items: center;
 }
+.text_ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 76vh;
+}
 
 .h-1 {
   display: flex;
