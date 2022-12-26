@@ -17,6 +17,14 @@
         display: flow-root;
     }
 
+    .text_ {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 116vh;
+    }
+
     .subtitile {
         display: flex;
         justify-content: center;
@@ -90,5 +98,21 @@
 
     .h2 {
         margin: 0% !important;
+    }
+
+    .setup {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 99%;
+        border-radius: 10px;
+    }
+
+    .all {
+        display: flex;
+        justify-content: center;
+        font-size: 2em !important;
+        margin-left: 10px;
+        text-transform: uppercase;
     }
 }
