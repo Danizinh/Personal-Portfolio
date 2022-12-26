@@ -22,7 +22,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 116vh;
+        height: 83vh;
     }
 
     .subtitile {
@@ -36,7 +36,7 @@
     }
 
     .paragraph {
-        width: 92%;
+        width: 94%;
         margin-left: 1%;
         font-weight: 100;
         text-transform: uppercase;
