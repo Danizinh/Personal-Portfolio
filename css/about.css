@@ -160,6 +160,23 @@ input[type="checkbox"] {
     color: #ccc;
     text-transform: uppercase;
 }
+h2 {
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+}
+
+h2:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 5px;
+    width: 50px;
+    border-radius: 3px;
+    background-color: #2ecc71;
+}
 
 ::-webkit-scrollbar {
     width: 13px;
